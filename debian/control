@@ -1,7 +1,7 @@
-Source: deepin-pw-check
+Source: lingmo-pw-check
 Section: devel
 Priority: optional
-Maintainer: Deepin Packages Builder <packages@deepin.com>
+Maintainer: Lingmo OS Team <team@lingmo.org>
 Build-Depends:
  debhelper-compat (= 11),
  libcrack2-dev,
@@ -14,7 +14,7 @@ Build-Depends:
  cracklib-runtime,
  deepin-gettext-tools,
 Standards-Version: 4.1.4
-Homepage: http://www.deepin.org
+Homepage: https://github.com/LingmoOS/lingmo-pw-check
 
 Package: deepin-pw-check
 Architecture: any
