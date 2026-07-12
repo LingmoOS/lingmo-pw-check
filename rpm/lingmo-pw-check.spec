@@ -5,7 +5,7 @@
 %if 0%{?with_debug}
 %global debug_package   %{nil}
 %endif
-Name:           deepin-pw-check
+Name:           lingmo-pw-check
 Version:        5.1.4
 Release:        1%{?dist}
 Summary:        Used to check password and manager the configuration for password.
@@ -20,12 +20,12 @@ BuildRequires:  compiler(go-compiler)
 BuildRequires:  pam-devel
 BuildRequires:  pkgconfig(gio-2.0)
 BuildRequires:  pkgconfig(gdk-3.0)
-BuildRequires:  deepin-gettext-tools
+BuildRequires:  lingmo-gettext-tools
 BuildRequires:  golang-github-fsnotify-fsnotify-devel
 #BuildRequires:  golang-github-godbus-dbus-devel
 BuildRequires:  golang-dbus
 
-BuildRequires:  cracklib-devel 
+BuildRequires:  cracklib-devel
 BuildRequires:  iniparser-devel
 BuildRequires:  golang-github-linuxdeepin-go-dbus-factory-devel
 BuildRequires:  go-lib-devel
@@ -38,7 +38,7 @@ In order to unify the authentication interface,
 this interface is designed to adapt to fingerprint, face and other authentication methods.
 
 %package devel
-Summary: Header files and libraries used to build deepin-pw-check
+Summary: Header files and libraries used to build lingmo-pw-check
 Requires: %{name} = %{version}-%{release}
 Requires: cracklib-devel iniparser-devel
 
@@ -73,7 +73,7 @@ mkdir -p %{buildroot}/%{_sysconfdir}/deepin
 export GOPATH=%{_datadir}/gocode
 export PKG_FILE_DIR=%{_libdir}/pkgconfig
 %make_install PKG_FILE_DIR=%{_libdir}/pkgconfig LIBDIR=lib64 PAM_MODULE_DIR=%{_libdir}/security GOBUILD="go build -compiler gc -ldflags \"-B $BUILDID\""
-%find_lang deepin-pw-check
+%find_lang lingmo-pw-check
 
 %ifarch i686
 mv %{buildroot}/usr/lib64/libdeepin_pw_check.so* %{buildroot}/usr/lib/
@@ -83,7 +83,7 @@ mv %{buildroot}/usr/lib64/libdeepin_pw_check.so* %{buildroot}/usr/lib/
 %doc README.md
 %license
 %{_bindir}/pwd-conf-update
-%{_prefix}/lib/deepin-pw-check/deepin-pw-check
+%{_prefix}/lib/lingmo-pw-check/lingmo-pw-check
 %{_libdir}/libdeepin_pw_check.so.*
 %ifarch i686
 /usr/lib/security/pam_deepin_pw_check.so

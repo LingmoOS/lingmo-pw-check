@@ -1,4 +1,4 @@
 [D-BUS Service]
-Name=org.deepin.dde.PasswdConf1
+Name=org.lingmo.PasswdConf1
 Exec=/bin/false
 SystemdService=deepin-passwd-conf.service

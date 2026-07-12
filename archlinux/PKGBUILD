@@ -2,19 +2,19 @@
 pkgname=deepin-pw-check-git
 pkgver=5.1.6.r5.g10c0e2f
 pkgrel=1
-sourcename=deepin-pw-check
+sourcename=lingmo-pw-check
 sourcetars=("$sourcename"_"$pkgver".tar.xz vendor.tar.gz)
 sourcedir="$sourcename"
 useforobs=1
-pkgdesc='deepin-pw-check is a tool to verify the validity of the password'
+pkgdesc='lingmo-pw-check is a tool to verify the validity of the password'
 arch=('x86_64' 'aarch64')
-url="https://github.com/linuxdeepin/deepin-pw-check"
+url="https://github.com/linuxdeepin/lingmo-pw-check"
 license=('GPL3')
 depends=('cracklib' 'iniparser' 'pam' 'gtk3')
 makedepends=('git' 'go' 'deepin-gettext-tools-git')
 groups=('deepin-git')
-provides=('deepin-pw-check')
-conflicts=('deepin-pw-check')
+provides=('lingmo-pw-check')
+conflicts=('lingmo-pw-check')
 source=("${sourcetars[@]}")
 sha512sums=('SKIP' 'SKIP')
 

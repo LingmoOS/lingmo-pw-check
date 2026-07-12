@@ -7,7 +7,7 @@ package main
 import (
 	"time"
 
-	"github.com/linuxdeepin/go-lib/log"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/log"
 )
 
 var logger = log.NewLogger("deepin_pw_check")

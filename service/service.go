@@ -8,16 +8,16 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	polkit "github.com/linuxdeepin/go-dbus-factory/system/org.freedesktop.policykit1"
+	polkit "github.com/LingmoOS/golang-github-lingmo-go-dbus-factory/system/org.freedesktop.policykit1"
 
-	"github.com/linuxdeepin/go-lib/keyfile"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/keyfile"
 
 	"github.com/godbus/dbus/v5"
-	"github.com/linuxdeepin/go-lib/dbusutil"
+	"github.com/LingmoOS/golang-github-lingmo-go-lib/dbusutil"
 )
 
 const (
-	dBusServiceName   = "org.deepin.dde.PasswdConf1"
+	dBusServiceName   = "org.lingmo.PasswdConf1"
 	dBusServicePath   = "/org/deepin/dde/PasswdConf1"
 	dBusInterfaceName = dBusServiceName
 )
